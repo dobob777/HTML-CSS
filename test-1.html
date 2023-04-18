@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #1084F9;
+        }
+
+        .main {
+            max-width: 1200px;
+            height: 550px;
+            margin: auto;
+        }
+
+        .navBar {
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        li {
+            padding: 0 10px;
+            text-transform: capitalize;
+            font-size: 18px;
+            color: #006;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        .content h1,
+        .content h2,
+        .content p {
+            margin: 0;
+        }
+
+        .conOne {
+            width: 600px;
+        }
+
+        .conTwo {
+            width: 600px;
+            margin: auto;
+        }
+
+        button {
+            border: none;
+            padding: 20px 50px;
+            font-size: 18px;
+            border-radius: 5px;
+            margin: 15px 10px 0;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 30px;
+            width: 500px;
+        }
+
+        h1 {
+            font-size: 65px;
+        }
+
+        h2 {
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="navBar">
+            <img src="data:image/png;base64,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"
+                alt="no-image">
+            <div class="menus">
+                <ul class="menu-items">
+                    <li>home</li>
+                    <li>about</li>
+                    <li>Services</li>
+                    <li>Dentist</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="conOne">
+                <h2>Better Life Through</h2>
+                <h1>Better Dentistry</h1>
+                <p>Join us to a fun and friendly dental environment. Our professionals are working so hard to see smile
+                    on
+                    your face that you deserve! We are dedicated about our duties.</p>
+                <div class="appBtn">
+                    <button>Appointment</button>
+                    <button>Learn More</button>
+                </div>
+            </div>
+            <div class="conTwo">
+                <img src="https://donto-react.netlify.app/static/media/hero-theeth.54c2c4e9.png" alt="no-image">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
